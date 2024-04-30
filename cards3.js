@@ -20,7 +20,7 @@ const USERS = [
   ];
 
 function crearTarjeta(user) {
-    const card = document.createElement("div");
+    const card = crearSeccion("div");
     const name_section = crearSeccion("h3", `Nombre: ${user.username}`);
     const desc_section = crearSeccion("p", `Descripción: ${user.desc}`);
     const age_section = crearSeccion("p", `Edad: ${user.age}`);
